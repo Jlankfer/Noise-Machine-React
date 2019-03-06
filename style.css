@@ -1,0 +1,74 @@
+*{
+  margin:0;
+}
+#drum-machine{
+  background-repeat:no-repeat;
+  min-height:100vh;
+  height:100%;
+  margin:0;
+  overflow-x:hidden;
+}
+#drum-machine h1{
+  display:block;
+  text-align:center;
+  float:none;
+}
+#display{
+display:block;
+  text-align:center;
+  float:none;
+  font-size:2em;
+  width:50vw;
+  margin-top:10px;
+}
+#button-container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap:10px;
+  margin:10px;
+}
+#multipad{
+  display:flex;
+  flex-flow:column-wrap;
+}
+.drum-pad{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:auto;
+  padding:auto;
+  font-size:1.5em
+}
+.pads-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-column-gap:15px;
+  grid-row-gap:10px;
+  width:35vw;
+  margin:auto;
+  margin-top:5vh;
+}
+.buttons{
+  font-size:1.2em;
+}
+
+.isPlaying{
+  background:red;
+  animation-name: playing;
+  animation-duration: 4s;
+}
+
+#display{
+  display:block;
+  margin:auto;
+}
+#author a, #author{
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  font-size:1.3em;
+  letter-spacing:20px;
+  text-shadow:2px 2px #ff71ce;
+  margin-top:30px;
+}
